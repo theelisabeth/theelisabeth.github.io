@@ -13,8 +13,23 @@ header {
 	position: fixed;
 }
 
-
-h1 {
-	width: 100%;
-	
+h3 {
+	font-size: 18px; 
+	font-family: helvetica;
+	padding: 20px;
+	color: #3b3b3b;
 }
+
+
+section a {
+	font-size: 16px; 
+	font-family: helvetica;
+	padding: 20px;
+	text-decoration: none;
+	color: #959888;
+}
+
+section a:hover {
+	text-decoration: line-through;
+}
+
