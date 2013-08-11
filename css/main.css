@@ -1,0 +1,20 @@
+body {
+	background-color: #eeeeee;
+}
+
+header {
+	font-size: 26px; 
+	color: #4289f0;
+	width: 100%;
+	padding: 20px;
+	background-color: #ffffff;
+	font-family: helvetica;
+	bottom: 0px;
+	position: fixed;
+}
+
+
+h1 {
+	width: 100%;
+	
+}
