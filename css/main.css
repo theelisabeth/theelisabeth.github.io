@@ -30,12 +30,13 @@ section a {
 	margin: 20px;
 }
 
+
 section a:hover 
 
 {
-	-webkit-transition: color 0.8s;
-	-moz-transition: color 0.8s;
-	transition: color 0.8s;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
 }
 
 section a::before {
@@ -46,9 +47,9 @@ section a::before {
 	content: '•';
 	text-shadow: 0 0 transparent;
 	font-size: .6em;
-	-webkit-transition: text-shadow 0.5s, color 0.5s;
-	-moz-transition: text-shadow 0.5s, color 0.5s;
-	transition: text-shadow 0.5s, color 0.5s;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
 	-webkit-transform: translateX(-80%);
 	-moz-transform: translateX(-80%);
 	transform: translateX(-80%);
@@ -63,7 +64,7 @@ section a:focus::before {
 
 section a:hover,
 section a:focus {
-	color: #ddf0ea;
+	color: #d4dccc;
 }
 
 section {
