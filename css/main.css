@@ -1,13 +1,13 @@
 body {
-	background-color: #eeeeee;
+	background-color: #a7c7d4;
 }
 
 header {
-	font-size: 26px; 
-	color: #4289f0;
+	font-size: 24px; 
+	color: #3681e2;
 	width: 100%;
 	padding: 20px;
-	background-color: #ffffff;
+	background-color: #f6ffed;
 	font-family: helvetica;
 	bottom: 0px;
 	position: fixed;
@@ -17,18 +17,60 @@ h3 {
 	font-size: 18px; 
 	font-family: helvetica;
 	padding: 20px;
-	color: #5e5e5e;
+	color: #f6ffed;
+	margin-top: 225px;
 }
 
 section a {
 	font-size: 18px; 
 	font-family: helvetica;
-	padding: 20px;
-	color: #5e5e5e;
+	color: #f6ffed;
 	text-decoration: none;
+	line-height: 32px;
+	margin: 20px;
 }
 
-section a:hover {
-	text-decoration: line-through;
+section a:hover 
+
+{
+	-webkit-transition: color 0.8s;
+	-moz-transition: color 0.8s;
+	transition: color 0.8s;
 }
 
+section a::before {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	color: transparent;
+	content: '•';
+	text-shadow: 0 0 transparent;
+	font-size: .6em;
+	-webkit-transition: text-shadow 0.5s, color 0.5s;
+	-moz-transition: text-shadow 0.5s, color 0.5s;
+	transition: text-shadow 0.5s, color 0.5s;
+	-webkit-transform: translateX(-80%);
+	-moz-transform: translateX(-80%);
+	transform: translateX(-80%);
+	pointer-events: none;
+}
+
+section a:hover::before,
+section a:focus::before {
+	color: #fff;
+	text-shadow: 10px 0 #fff, -10px 0 #fff;
+}
+
+section a:hover,
+section a:focus {
+	color: #ddf0ea;
+}
+
+section {
+	width: 150px;
+	float: left;
+}
+
+#logo {
+	color: white;
+}
