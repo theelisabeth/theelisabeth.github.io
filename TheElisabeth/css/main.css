@@ -44,7 +44,7 @@ h4 {
 }
 
 p {
-    font-family: "Maison Mono TRIAL";
+    font-family: "Maison Mono TRIAL" courier;
     font-weight: 100;
     font-size: 13px;
     line-height: 21px;
@@ -52,7 +52,7 @@ p {
 }
 
 ul {
-    font-family: "Maison Mono TRIAL";
+    font-family: "Maison Mono TRIAL" courier;
     font-weight: 100;
     font-size: 13px;
     line-height: 21px;
@@ -62,7 +62,7 @@ ul {
 
 nav a {
     text-decoration: none;
-    font-family: "Maison Mono Trial";
+    font-family: "Maison Mono Trial" courier;
     font-weight: 100;
     font-size: 12px;
 }
@@ -217,7 +217,7 @@ footer img {
 }
 
 h5 {
-    font-family: "Maison Mono TRIAL";
+    font-family: "Maison Mono TRIAL"courier;
     font-weight: 100;
     font-size: 13px;
     line-height: 21px;
