@@ -211,8 +211,9 @@ footer{
 
 /* Images */
 footer img {
-    width: 12%;
+    width: 2%;
     margin-top: 0;
+    min-width: 100px;
 }
 
 h5 {
@@ -220,4 +221,27 @@ h5 {
     font-weight: 100;
     font-size: 13px;
     line-height: 21px;
+}
+
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
