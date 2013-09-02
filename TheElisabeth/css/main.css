@@ -1,3 +1,8 @@
+/* Color */
+
+body {
+    background-color: #131314;
+}
 
 /* Typography */
 
@@ -6,49 +11,58 @@ a {
 }
 
 a, span.link {
-  color: black;
+  color: #131314;
 }
 
 a:active, span.active {
-   color: blue;
+   /*color: #131314;*/
 }
 
 a:hover {
     color: gray;
-    border-bottom: 1px solid gray;
 }
 h1 {
-    font-family: "HelveticaNeue", Helvetica;
+    font-family: "Avenir LT Std", Helvetica;
     font-weight: 500;
-    width: 20px;
     line-height: 1.2em;
+    color: #131314;
 }
 
 h2 {
     font-family: "Maison Mono Trial";
     font-size: 12px;
     line-height: 16px;
+    margin-bottom: 15px;
+    color: #131314;
+
 }
 
 h3 {
-    font-family: "HelveticaNeue-Light", Helvetica;
+    font-family: "Avenir LT Std", Helvetica;
     font-weight: 800;
     font-size: 16px;
+    color: #131314;
+
 }
 
 h4 {
-    font-family: "HelveticaNeue", Helvetica;
-    font-size: 2.2em;
+    font-family: "Avenir LT Std", Helvetica;
+    font-size: 2.3em;
     font-weight: 500;
     line-height: 1.3em;
+    color: #131314;
 }
 
+.about h4 {
+    margin-top: 1em;
+}
 p {
     font-family: "Maison Mono TRIAL" courier;
     font-weight: 100;
     font-size: 13px;
     line-height: 21px;
-    margin: 0px 20px 0px 20px;
+    margin: 20px 20px 0px 0px;
+    color: #131314;
 }
 
 ul {
@@ -56,7 +70,6 @@ ul {
     font-weight: 100;
     font-size: 13px;
     line-height: 21px;
-    margin: 0px 20px 0px 20px;  
 }
 
 
@@ -67,59 +80,60 @@ nav a {
     font-size: 12px;
 }
 
-
 /* Composition */
 
 .container {
-    max-width: 970px;
+    max-width: 960px;
     margin: 0 auto;
-}
-
-nav {
-    float: right;
-    margin: 20px 85px 0px 0px;
-    word-spacing: 70px;
-
 }
 
 .story {
-    margin: 0px auto 80px auto;
+    margin: 0 auto;
 }
 
-h1 {
-    margin: 20px 0px 0px 21px;
-}
 
-h2 {
-    padding: 200px 0px 4px 20px;
-}
-
-h3 {
-    margin: 11px 20px 20px 21px;
-}
-
-h4 {
-    margin: 20px;
+nav {
+    float: right;
+    word-spacing: 70px;
 }
 
 header {
-    background: white;
     width: 100%;
-    height: 105px;
-    margin: 0 auto;
+    height: 75px;
     position: fixed;
-    padding-top: 3px;
-    max-width: 970px;
+    max-width: 960px;
+    padding: 40px 0px 0px 0px;
+}
+
+
+h1 {
+    float: left;
+    vertical-align: baseline;
+}
+
+h2 {
+    padding: 200px 0px 0px 0px;
+}
+
+h3 {
+    float: left;
+    clear: left;
+    padding-top: 10px;
+}
+
+
+.concept-statement h4{
+    height: 400px;
+    margin: 100px auto;
+    color: white;
 
 }
 
-.concept-statement {
-    margin-top: 20px;
+.about {
+    margin: 250px auto;
+    height: 400px;
 }
 
-.story p {
-    margin-right: 70px;
-}
 ul {
     text-decoration: none;
     font-family: "Maison Mono Trial"; 
@@ -135,7 +149,7 @@ ul {
 
 .learning-section {
     margin-bottom: 20px;
-    height: 250px;
+    height: 500px;
 }
 
 .currently-learning {
@@ -144,13 +158,12 @@ ul {
 }
 
 .learning-list {
-    width: 300px;
-    margin: 40px 80px 50px 30px;
+    width: 295px;
 }
 
 .past-section {
     margin-bottom: 20px;
-    height: 500px;
+    height: 600px;
 }
 
 .past-projects {
@@ -159,8 +172,7 @@ ul {
 }
 
 .projects-list {
-    width: 300px;
-    margin: 60px 80px 50px 30px;
+    width: 295px;
 }
 
 .sources-section {
@@ -169,18 +181,16 @@ ul {
 }
 
 .sources {
-    width: 300px;
+    width: 500px;
     float: left;  
 }
 
 .sources-list {
-    width: 300px;
-    margin: 0px 80px 50px 30px;
+    width: 295px;
 }
 
-
 .connect-section {
-    height:500px;
+    height: 550px;
     margin-bottom:20px;
 }
 
@@ -189,35 +199,284 @@ ul {
     float: left;
 }
 
-.connect-list {
-    width: 300px;
-    margin: 0px 80px 50px 30px; 
+.connect-section p {
+    width: 481px;
+    float: left;
 }
 
-
-.connect-section p {
-    width: 470px;
-    height: 60px;
+.connect-list {
+    width: 295px;
 }
 
 /* Footer */
 footer{
     /*Background-color: #ffc300;*/
     width: 100%;
-    bottom: 0px;
-    height: 175px;
+    height: 200px;
+    padding-top: 20px;
     text-align: center;
 }
 
 /* Images */
 footer img {
-    width: 12%;
-    margin-top: 0;
+    width: 11%;
+    min-width: 50px;
 }
 
-h5 {
-    font-family: "Maison Mono TRIAL"courier;
-    font-weight: 100;
-    font-size: 13px;
-    line-height: 21px;
+header img {
+    width: 9%;
+    min-width: 25px;
+    float: right;
+    clear: right;
+    padding-right: 20px;
 }
+
+
+/* Media Queries */
+@media {
+
+}
+
+@media only screen and (max-width: 1000px){
+ body {
+        width: 100%;
+    }
+and
+    header {
+    padding: 40px 20px 0px 20px;
+    }
+
+    .story {
+        margin: 0px 20px 80px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+
+    header {
+    padding: 40px 20px 0px 20px;
+    }
+
+    nav {
+        padding-right: 40px;
+    } 
+
+    .story {
+        margin: 0px 20px 80px 20px;
+    }
+
+    h4 {
+        font-size: 1.9em;
+    }
+   
+    .currently-learning {
+        width: 400px;
+    }
+
+    .past-projects {
+        width: 400px;
+        float: left;  
+    }
+
+    .sources {
+        width: 400px;
+        float: left;  
+    }
+
+    .contact-title {
+        width: 390px;
+    }
+
+    .connect-section p {
+        width: 370px;
+        float: left;
+        clear: left;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        width: 100%;
+    }
+
+    header {
+    padding: 40px 20px 0px 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .story {
+        margin: 0px 20px 80px 20px;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        padding: 0px;
+    }
+
+    ul {
+        text-decoration: none;
+        font-family: "Maison Mono Trial"; 
+        font-size: 12px;
+        float: left;
+        clear: left;
+        padding-top: 20px;  
+    }
+
+    .learning-list {
+        width: 295px;
+    }
+
+    .past-projects {
+        width: 390px;
+        float: left;  
+    }
+
+    .sources-list li {
+        margin-top: 18px;
+    }
+
+    .contact-title {
+        width: 390px;
+    }
+
+    .connect-section p {
+        width: 370px;
+        float: left;
+        clear: left;
+    }
+
+    .connect-list {
+        width: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    
+    header {
+        padding: 25px 20px 0px 20px;
+    }
+    
+     nav {
+        display: none;
+    }
+
+    .story {
+        margin: 0px 20px 80px 20px;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        padding: 0px;
+    }
+
+    ul {
+        text-decoration: none;
+        font-family: "Maison Mono Trial"; 
+        font-size: 12px;
+        float: left;
+        padding-top: 20px;  
+    }
+
+    .learning-list {
+        width: 295px;
+    }
+
+    .past-projects {
+        width: 390px;
+        float: left;  
+    }
+
+    .sources-list li {
+        margin-top: 18px;
+    }
+
+    .contact-title {
+        width: 340px;
+        float: left;
+    }
+
+    .connect-section p {
+        width: 320px;
+        float: left;
+    }
+
+    .connect-list {
+        width: 320px;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px){
+    body {
+        width: 100%;
+    }
+
+    header {
+        padding: 25px 20px 0px 20px;
+    }
+
+    nav {
+        display: none;
+
+    }
+
+    .story {
+        margin: 0px 20px 80px 20px;
+    }
+
+    h1 {
+        float: left;
+        vertical-align: baseline;
+    }
+
+    h2 {
+        padding: 200px 0px 0px 0px;
+    }
+
+    h3 {
+        float: left;
+        clear: left;
+        padding-top: 10px;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        padding: 0px;
+    }
+
+    ul {
+        text-decoration: none;
+        font-family: "Maison Mono Trial"; 
+        font-size: 12px;
+        float: left;
+        padding-top: 20px;  
+    }
+
+    .past-projects {
+        width: 320px;
+        float: left;  
+    }
+
+     .sources-list li {
+        margin-top: 18px;
+    }
+
+    .contact-title {
+        width: 320px;
+        float: left;
+    }
+
+    .connect-list {
+        width: 320px;
+    }
+}
+
