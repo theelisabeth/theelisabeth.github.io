@@ -5,10 +5,14 @@ $(document).ready(function(){
         animationmouseover('.circle-e', 'bounce');
         animationmouseover('.circle-f', 'bounce');
         animationmouseover('.circle-g', 'bounce');
-        animationmouseover('.circle-sg', 'bounce');
         animationmouseover('.circle-a', 'bounce');
         animationmouseover('.circle-b', 'bounce');
-        animationmouseover('.circle-end', 'bounce');
+        animationmouseover('.circle-ch', 'bounce');
+        animationmouseover('.circle-special', 'bounce');
+
+        $('audio').each(function(){
+            this.volume = 0.3;
+        });
 
         $("#audio").attr("id", "audio-0");
             $(".circle-c").mouseover(function(){
@@ -33,6 +37,18 @@ $(document).ready(function(){
             $(".circle-b").mouseover(function(){
               $("#audiob").trigger('play');
         });
+            $(".circle-ch").mouseover(function(){
+              $("#audioch").trigger('play');
+        });
+            $(".circle-special").mouseover(function(){
+              $("#audioch, #audioe, #audiog").trigger('play');
+        });
+            $("h1").mouseover(function(){
+              $("#audiob").trigger('play');
+              $("#audioe").trigger('play');
+              $("#audiog").trigger('play');
+        });
+
 
   function animationmouseover(element, animation){
       element = $(element);

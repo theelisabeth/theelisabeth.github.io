@@ -2,7 +2,7 @@
 
 body {
 	background-color: #f7fdf6;
-	width: 8500px;
+	width: 5500px;
 }
 
 .container {
@@ -10,16 +10,16 @@ body {
 }
 
 aside {
-	max-width: 260px;
+	max-width: 400px;
 	position: fixed;
-	padding: 0px 15px 0px 15px;
+	padding: 0px 15px 0px 35px;
 	/*background-color:#a5c9b1;*/
 	height: 100%;
 }
 
 .sounds {
 	padding-top: 200px;
-	margin-right: 800px;
+	margin: 0px 545px 0px 250px;
 }
 
 /* circles */
@@ -75,21 +75,11 @@ aside {
 	float: right;
 }
 
-.circle-sg{
-	border-radius: 50%;
-	width: 150px;
-	height: 150px; 
-	background: gray;
-	margin: 50px;
-	position: relative;
-	float: right;
-}
-
 .circle-a {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px; 
-	background: #3c55f2;
+	background:green;
 	margin: 50px;
 	position: relative;
 	float: right;
@@ -99,43 +89,74 @@ aside {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px; 
-	background: green;
+	background: #3c55f2;
 	margin: 50px;
 	position: relative;
 	float: right;
 }
 
-.circle-end{
+.circle-ch{
 	border-radius: 50%;
 	width: 150px;
 	height: 150px; 
+	background:lightgray;
 	margin: 50px;
-	border: dotted 2.3px black;
 	position: relative;
 	float: right;
 }
 
+.circle-special{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: pink;
+    transition: background .7s ease, padding: .07s linear;
+;
+    -webkit-transition: background .7s ease;
+    -moz-transition: background .7s ease;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-dotted{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	border: lightgray dotted 2px;
+    transition: background .7s ease, padding: .07s linear;
+;
+    -webkit-transition: background .7s ease;
+    -moz-transition: background .7s ease;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-special:hover {
+	background:#31a4f3;
+}
 
 /* typography */
 h1 {
 	font-family: "univers 55", helvetica, arial, sans-serif;
 	font-weight: 300;
-	font-size: 1.2em;
-	color: #d3d8d3;
+	font-size: 40px;
+	color: #6c6e6e;
     transition: color 0.8s ease;
     -webkit-transition: color 0.8s ease;
     -moz-transition: color 0.8s ease;
 }
 
 h1:hover {
-    color: #9ea29e;
+    color: #d3d8d3;
 }
 
 p {
 	font-family: "univers 45", helvetica, arial, sans-serif;
 	font-weight: 300;
 	font-size: .9em;
-	color: #d3d8d3;
+	color: #9ea29e;
 }
 
 p a:visited {
@@ -143,21 +164,23 @@ p a:visited {
 }
 
 p a:hover {
-	color: #9ea29e;
+	color: #d3d8d3;
 }
 
 #guide p {
-	font-size: 1.2em;
 	width: 200px;
 	float: left;
-	margin: 310px 0px 0px 20px;
+	margin: 505px 0px 0px 484px;
+	position:absolute;
+	text-align: center;
 }
 
 #guide h5 {
-	font-size: 5em;
+	font-size: 3.7em;
 	float: left;
-	margin: 280px 0px 0px 50px;
+	margin: 420px 0px 0px 542px;
 	color: #d3d8d3;
+	position:absolute;
 }
 
 /* media queries */
