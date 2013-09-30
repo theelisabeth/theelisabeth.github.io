@@ -28,11 +28,20 @@ $(document).ready(function(){
 
 $( document ).ready(function() {     
 	console.log( "ready!" ); 
+    $("h1").animate({color:"#ffffff"}, 600);
+    $("h3").animate({color:"#ffffff"}, 600);
+    $("header").animate({backgroundColor:"#131314", opacity:".99"}, 0);
 	$('.concept-statement').waypoint(function(direction) {
 		if (direction == "up") {
-			$("body").animate({ backgroundColor: "#131314" }, 500 );
+            $("h1").animate({color:"#ffffff"}, 600);
+			$("body").animate({ backgroundColor: "#131314" }, 600);
+            $("h3").animate({color:"#ffffff"}, 600);
+            $("header").animate({backgroundColor:"#131314"}, 600);
 		} else if (direction == "down") { 
-			$("body").animate({ backgroundColor: "#ffffff" }, 500 );
+            $("h1").animate({color:"#131314"}, 600);
+            $("body").animate({ backgroundColor: "#ffffff" }, 600);
+            $("h3").animate({color:"#131314"}, 600);
+            $("header").animate({backgroundColor:"#ffffff", opacity:".99"}, 600);
 		}
 	},
 	{offset: function() {

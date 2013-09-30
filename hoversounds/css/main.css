@@ -1,0 +1,163 @@
+/*structure*/
+
+body {
+	background-color: #f7fdf6;
+	width: 8500px;
+}
+
+.container {
+	width: 100%;
+}
+
+aside {
+	max-width: 260px;
+	position: fixed;
+	padding: 0px 15px 0px 15px;
+	/*background-color:#a5c9b1;*/
+	height: 100%;
+}
+
+.sounds {
+	padding-top: 200px;
+	margin-right: 800px;
+}
+
+/* circles */
+
+.circle-c {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: black;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+
+.circle-d {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: #ebc220;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-e {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: white;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-f{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: red;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-g{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: #64b5dc;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-sg{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: gray;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-a {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: #3c55f2;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-b{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	background: green;
+	margin: 50px;
+	position: relative;
+	float: right;
+}
+
+.circle-end{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	margin: 50px;
+	border: dotted 2.3px black;
+	position: relative;
+	float: right;
+}
+
+
+/* typography */
+h1 {
+	font-family: "univers 55", helvetica, arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	color: #d3d8d3;
+    transition: color 0.8s ease;
+    -webkit-transition: color 0.8s ease;
+    -moz-transition: color 0.8s ease;
+}
+
+h1:hover {
+    color: #9ea29e;
+}
+
+p {
+	font-family: "univers 45", helvetica, arial, sans-serif;
+	font-weight: 300;
+	font-size: .9em;
+	color: #d3d8d3;
+}
+
+p a:visited {
+	color: #9ea29e;
+}
+
+p a:hover {
+	color: #9ea29e;
+}
+
+#guide p {
+	font-size: 1.2em;
+	width: 200px;
+	float: left;
+	margin: 310px 0px 0px 20px;
+}
+
+#guide h5 {
+	font-size: 5em;
+	float: left;
+	margin: 280px 0px 0px 50px;
+	color: #d3d8d3;
+}
+
+/* media queries */

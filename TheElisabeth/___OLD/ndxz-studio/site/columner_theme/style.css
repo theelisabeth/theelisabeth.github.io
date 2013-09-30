@@ -1,0 +1,283 @@
+/**
+* CSS
+* 
+* @version 1.0
+* @author Vaska 
+* @author Gregory Cadar
+* @author Columner Theme by Mathieu Hardiviller (www.hmplus.net)
+
+*/
+* {
+margin : 0;
+padding : 0;
+}
+
+body {
+	font-size: 8pt;
+	font-family: Arial, Helvetica, sans-serif;/* font of all the text in your website except for sections overwritten.
+	Go to www.typetester.org to test sizes and see the list of safe fonts - If the user doesnt have the first one, it try the second, and goes along the list until it finds a font that the computer has installed */
+	color: black; /* color of all the text in your website except for links and other sections overwritten */
+	text-align: left;
+	background-color: white; /* sets the background color */
+	line-height : 120%;
+}
+
+body.section-1 { }
+body.section-2 { }
+body.section-3 { }
+
+/* LINKS */
+/* colors for all links */
+a:link {
+	text-decoration: none;
+	background-color: #FFFF99;
+	color: black;
+}
+
+a:active {
+	text-decoration: none;
+	background-color: #FFFF99;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	background-color: #FFFF99;
+	color: black; }
+	
+a:hover { 
+	text-decoration: none;
+	background-color: #FFFF33;
+	color: black; }
+
+a img { border: none; }
+
+
+/* PRE NAV TEXT - Can be accessed in the Exhibit Settings */
+#top-section {
+position: fixed;
+z-index : 900;
+right : 0;
+width: auto;
+margin: 25px 40px 0px 0px;
+font-size: 8px;
+font-weight: bold;
+line-height : 170%;
+color: #1a1a1a;
+font-family: Arial, Helvetica, sans-serif;
+}
+#top-section a { /* this is the link property inside the Top-Section */
+text-decoration: none;
+color: black;
+font-weight: 100;
+}
+#top-section a:hover { /* link property inside the Top-Section when the cursor is over */
+color: black;
+}
+#top-section p {
+text-align: right;
+}
+
+/* MENU */
+
+#menu {
+	position: fixed;
+	width : 100%;
+	background-color: white;
+}
+
+#menu .container { padding: 0px 0px 0px; }
+
+#menu ul {
+	float: left;
+	width: 90px;  /* the width of each column in the menu */
+	list-style-type: none;
+	overflow: auto;
+	margin: 25px 0px 0px 40px;
+	padding: 0px 0px 0px 0px;
+}
+
+#menu ul li.section-title { /* property of the section titles */
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	width: auto;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 2px 0px;
+}
+
+
+#menu ul li {  /* property of the projects/exhibitions titles */
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 8pt;
+	width: auto;
+	margin: 0px 0px 2px 0px;
+}
+
+#menu ul li.active {  
+	text-decoration: underline;
+}
+
+#menu p {
+	color: black;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#menu ul a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#menu ul a:active {
+	text-decoration: none;
+	color: black;
+}
+
+#menu ul a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#menu ul a:hover {
+	color: black;
+}
+
+
+/* POST NAV AREA : This sets the style for Post-Nav Text which can be accessed in the Exhibit Settings */
+#copy {
+z-index : 80;
+left : 0;
+bottom : 0;
+margin : 0 0 0 0;
+padding : 0px 0px 4px 28px;
+background-color: white;
+font-size: 8px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* INDEXHIBIT CREDIT : Always good to credit the CMS that gives you these possibilities */
+#indexhibit { /* sets the properties for the "Built with" part  */
+z-index : 100;
+right : 0;
+bottom : 0;
+margin : 0 0 0 0;
+padding : 0px 40px 14px 0px;
+font-size: 10px;
+font-family: Arial, Helvetica, sans-serif;
+text-align : right;
+}
+
+#copy  {
+  /* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+  position: absolute;
+}
+body > #copy  {
+  /* used by Opera 5+, Netscape6+/Mozilla, Konqueror, Safari, OmniWeb 4.5+, iCab, ICEbrowser */
+  position: fixed;
+}
+#indexhibit  {
+  /* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+  position: absolute; 
+}
+body > #indexhibit  {
+  /* used by Opera 5+, Netscape6+/Mozilla, Konqueror, Safari, OmniWeb 4.5+, iCab, ICEbrowser */
+  position: fixed;
+}
+
+/* MAIN CONTENT */
+
+#content {
+	float: left;
+	height: 400px;
+	display: inline;
+	margin: 8px 0px 0px 40px;
+	padding: 130px 0px 0px 0px; /* the first number sets the height start of the exhibitions zone / under your menu */
+	z-index: -10;
+}
+
+.container {
+    padding: 0px 0px 0px 0px;   
+}
+
+/* End Main Content */
+
+/* Fonts / Typefaces */
+
+#content p {
+	width: 100%;
+	margin: 0px 0px 5px 0px;
+	position: static;
+}
+
+p {
+	font-size: 8pt;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 12px;
+}
+
+
+#content a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+h1 { 
+	letter-spacing: -20px;
+	line-height: 80%;
+	font-size:1500%;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0px 0px 20px 0px;
+}
+
+h2 {
+	font-size:500%;
+	line-height: 120%;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0px 0px 10px 0px;
+}
+
+h3 {
+	font-size: 50px;
+	line-height: 100%;
+	letter-spacing: -5px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0px 0px 10px 0px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+#img-container {
+	margin: 0px 0px 0p 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#img-container p {
+	width: auto;
+	//margin: 0px 0px 0px 0px;
+//	padding: 0px 0px 0px 0px;
+}
+
+/* End Fonts / Typefaces */
+
+#once { clear: left; }

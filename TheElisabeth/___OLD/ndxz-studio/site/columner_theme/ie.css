@@ -1,0 +1,50 @@
+/**
+* CSS
+* 
+* @version 1.0
+* @author Vaska 
+* @author Gregory Cadar
+*/
+
+body {
+    height: 100%;
+    overflow: auto;
+	background: url(null) fixed ; /* évite le sautillement */
+}
+
+#menu {
+    top:expression(documentElement.scrollTop+body.scrollTop + 'px' );
+    position: absolute;
+    width: 100%;
+	background-color: #fff;
+}
+
+#content {
+    margin: 0 0 0 215px;
+    top: 0;
+}
+
+
+* html div#content {
+    width: 80%;
+    position: absolute;
+    margin: 0;
+}
+
+
+#copy {
+    top: expression( ( -20 - fixme.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+#indexhibit { 
+    top: expression( ( -20 - fixme.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+img.png {
+	background-image: expression(
+		this.runtimeStyle.backgroundImage = "none",
+		this.runtimeStyle.filter =
+		"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src +
+		"', sizingMethod='image')",
+		this.src = "/path/to/transparent.gif"
+	);
+}

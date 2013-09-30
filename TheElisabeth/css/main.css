@@ -28,9 +28,14 @@ a:active, span.active {
    /*color: #131314;*/
 }
 
+
 a:hover {
-    color: gray;
+    color:#f67500 ;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s;
 }
+
 h1 {
     font-family: "AvenirLT-Roman", Helvetica;
     font-weight: 500;
@@ -81,7 +86,6 @@ ul {
     line-height: 21px;
 }
 
-
 nav a {
     text-decoration: none;
     font-family: "Maison Mono Light", "Consolas", monospace; font-weight:200; font-style:normal;
@@ -90,6 +94,19 @@ nav a {
 }
 
 /* Composition */
+
+#here {
+    padding-top:100px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    transition: all 2s ease;
+
+}
+.animated.fadeIn {
+    -webkit-animation-name:fadeIn;
+    -moz-transition: fadeIn;
+    transition: fadeIn;
+}
 
 .container {
     max-width: 960px;
@@ -110,6 +127,7 @@ header {
     height: 75px;
     position: fixed;
     max-width: 960px;
+    width: 100%;
     padding: 40px 0px 0px 0px;
 }
 
@@ -132,15 +150,45 @@ h3 {
 
 .concept-statement h4{
     height: 400px;
-    margin: 100px auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
     color: white;
-
 }
 
 .about {
     margin: 250px auto;
     height: 400px;
 }
+
+#sources-list li p {
+    visibility: hidden;
+    margin-top:-22px;
+
+}
+
+#sources-list li:hover p{
+    visibility: visible;
+    background-color:white;
+    margin-top:-22px;
+}
+
+#sources-list li:hover a{
+    visibility: hidden;
+}
+
+#openingsoon {
+
+}
+
+#openingsoon:hover span{
+    display: none;
+}
+
+#openingsoon:hover:after{
+    color: #a5a6ac;
+    content:" (opening soon!)";
+}
+
 
 ul {
     text-decoration: none;
@@ -149,7 +197,7 @@ ul {
     float: right;   
 }
 
-.sources-list li {
+#sources-list li {
     margin-top: 18px;
 }
 
@@ -193,13 +241,14 @@ ul {
     float: left;  
 }
 
-.sources-list {
+#sources-list {
     width: 295px;
 }
 
 .connect-section {
-    height: 550px;
+    height: 675px;
     margin-bottom:20px;
+    margin-top:100px;
 }
 
 .contact-title {
@@ -217,33 +266,44 @@ ul {
 }
 
 /* Footer */
-footer{
-    /*Background-color: #ffc300;*/
-    width: 100%;
-    height: 100px;
-    padding-top: 20px;
-    text-align: left;
+footer {
+   position:fixed;
+   bottom:0px;
+   height:60px;
+   width: 960px;
+   margin: 0 auto;
 }
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
 
 /* Images */
 footer img {
     width: 3%;
-    min-width: 30px;
+    min-width: 15px;
+    padding-left: 0px;
 }
 
-header img {
-    width: 9%;
-    min-width: 25px;
-    float: right;
-    clear: right;
-    padding-right: 20px;
+.first {
+  -webkit-transition:all 0.7s ease-out;
+  -moz-transition:all 0.7s ease-out;
+  -ms-transition:all 0.7s ease-out;
+  -o-transition:all 0.7s ease-out;
+  transition:all 0.7s ease-out;
 }
 
-
-/* Media Queries */
-@media {
-
+.first:hover {
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);
 }
+
 
 @media only screen and (max-width: 1000px){
  .container {
@@ -256,6 +316,10 @@ header img {
 
     .story {
         margin: 0px 20px 80px 20px;
+    }
+
+    footer img {
+    padding-left: 20px;
     }
 
 }
@@ -303,6 +367,10 @@ header img {
         width: 370px;
         float: left;
         clear: left;
+    }
+
+    footer img {
+    padding-left: 20px;
     }
 
 }
@@ -374,6 +442,7 @@ header img {
     
     header {
     padding: 40px 20px 0px 20px;
+
     }
     
      nav {
