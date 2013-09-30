@@ -41,7 +41,7 @@ $(document).ready(function(){
               $("#audioch").trigger('play');
         });
             $(".circle-special").mouseover(function(){
-              $("#audioch, #audioe, #audiog").trigger('play');
+              $("#audioch, #audioe, #audiog, #audioyeah").trigger('play');
         });
             $("h1").mouseover(function(){
               $("#audiob").trigger('play');
